@@ -1,0 +1,68 @@
+{
+  "name": "daily-trends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i && tsc && tsc-alias",
+    "clean": "rm -rf node_modules dist package-lock.json *.tgz || true",
+    "lint": "eslint . --ext .ts",
+    "test": "npm ls --depth=0 || npm run build && jest --useStderr --forceExit",
+    "start": "node --inspect ./dist/index.js",
+    "start:watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manganper/dailyTrends.git"
+  },
+  "author": "Manuel Gandul Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manganper/dailyTrends/issues"
+  },
+  "homepage": "https://github.com/manganper/dailyTrends#readme",
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "@types/node": "17.0.0",
+    "@types/express": "4.17.17",
+    "@typescript-eslint/eslint-plugin": "5.58.0",
+    "@typescript-eslint/parser": "5.58.0",
+    "eslint": "8.38.0",
+    "nodemon": "2.0.22",
+    "typescript": "5.0.4",
+    "tsc-alias": "1.8.5",
+    "tsconfig-paths": "4.2.0",
+    "ts-node": "^9.0.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "node --inspect=5859 -r ts-node/register src/App.ts",
+    "ext": "ts"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
