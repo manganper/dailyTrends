@@ -12,8 +12,14 @@
       "@config/*": [
         "config/*"
       ],
+      "@database/*": [
+        "database/*"
+      ],
       "@middlewares/*": [
         "middlewares/*"
+      ],
+      "@models/*": [
+        "models/*"
       ],
       "@routes/*": [
         "routes/*"
