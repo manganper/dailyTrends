@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "c6f108d8-6bc0-4914-9718-367ae6385e3a",
+		"name": "DailyTrends",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2109553"
+	},
+	"item": [
+		{
+			"name": "Save Notice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "security",
+						"value": "security",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tittle\": \"test\",\n    \"body\": \"test\",\n    \"url\": \"test\",\n    \"date\": \"2023-4-16\",\n    \"origin\": \"pais\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/notice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Notice",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "security",
+						"value": "security",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/notice/notice/643c644d0b6b6755e82c8f05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notice",
+						"notice",
+						"643c644d0b6b6755e82c8f05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Feed",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "security",
+						"value": "security",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/notice/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notice",
+						"feed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Notice",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "security",
+						"value": "security",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/notice/643c644d0b6b6755e82c8f05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notice",
+						"643c644d0b6b6755e82c8f05"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
