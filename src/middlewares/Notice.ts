@@ -27,7 +27,7 @@ const getNotice = async (id: string): Promise<INotice> => {
   }
 };
 
-const deleteNotice = async (id): Promise<boolean> => {
+const deleteNotice = async (id: string): Promise<boolean> => {
   try {
     const query = Notice.findByIdAndDelete(id);
     const result = await query.exec();
