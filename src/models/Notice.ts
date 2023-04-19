@@ -14,6 +14,10 @@ const NoticeSchema = new mongoose.Schema<INotice, mongoose.Model<INotice>>({
     type: String,
     required: true,
   },
+  url: {
+    type: String,
+    required: true,
+  },
   origin: {
     type: String,
     required: true,
