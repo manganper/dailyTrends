@@ -2,7 +2,7 @@ import { MAX_NEWSPAPER_NOTICES } from '@config/Envs';
 import { Origin } from '@config/Origin';
 import { buildNoticeSchema, Notice } from '@models/Notice';
 import { Feed, INotice } from '@types';
-import { getTodayDate } from '../helpers/Notice';
+import { getTodayDate } from '@helpers/Notice';
 
 const getNoticesFromOrigin = async (
   origin: Origin,

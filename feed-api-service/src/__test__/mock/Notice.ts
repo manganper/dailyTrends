@@ -1,7 +1,7 @@
 import { Origin } from '@config/Origin';
 import { saveNotice } from '@middlewares/Notice';
 import { INotice } from '@types';
-import { getTodayDate } from '../../helpers/Notice';
+import { getTodayDate } from '@helpers/Notice';
 
 const createMockNotice = (): INotice => ({
   tittle: 'Test Notice',
