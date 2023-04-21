@@ -70,5 +70,6 @@ For this project we have used:
 - **got**: To make requests between microservices.
 - **jest**: For testing.
 - **scrape-it**: For web scraping.
+- **ESLint**: To ensure that all code is done in the same way.
 
 In addition to this, it has been decided to use **path aliases** so that imports within the same microservice make sense and are understandable at first glance.
