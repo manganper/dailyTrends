@@ -67,6 +67,7 @@
     "moduleNameMapper": {
       "^@config/(.*)$": "<rootDir>/config/$1",
       "^@database/(.*)$": "<rootDir>/database/$1",
+      "^@helpers/(.*)$": "<rootDir>/helpers/$1",
       "^@middlewares/(.*)$": "<rootDir>/middlewares/$1",
       "^@models/(.*)$": "<rootDir>/models/$1",
       "^@routes/(.*)$": "<rootDir>/routes/$1",

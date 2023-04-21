@@ -118,6 +118,40 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Crawler",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "security",
+						"value": "security",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://www.elmundo.es/\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/crawler",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"crawler"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -15,6 +15,9 @@
       "@database/*": [
         "database/*"
       ],
+      "@helpers/*": [
+        "helpers/*"
+      ],
       "@middlewares/*": [
         "middlewares/*"
       ],
