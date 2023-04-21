@@ -25,7 +25,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd crawler-service
       - run: npm i
+        working-directory: ./crawler-service
       - run: npm run build
+        working-directory: ./crawler-service
       - run: npm run test
+        working-directory: ./crawler-service

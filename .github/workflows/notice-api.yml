@@ -25,7 +25,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd feed-api-service
       - run: npm i
+        working-directory: ./feed-api-service
       - run: npm run build
+        working-directory: ./feed-api-service
       - run: npm run test
+        working-directory: ./feed-api-service
